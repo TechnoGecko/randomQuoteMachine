@@ -1,0 +1,8 @@
+* {
+    transition: all 0.2s ease-in-out;
+}
+
+.custom {
+    width: 80px
+}
+
