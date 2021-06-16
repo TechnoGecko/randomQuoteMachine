@@ -57,13 +57,13 @@ function App (){
                             ) : (
                               <h2>Loading</h2>  
                             )}
-                            <div className="row">
-                                <button id="new-quote" onClick={getNewQuote} className="btn btn-primary mL-3 col-sm">New Quote</button>
-                                <a id="tweet-quote" href={"https://twitter.com/intent/tweet?hashtags=quotes&text=" + encodeURIComponent( 
+                            <div className="row justify-content-around">
+                                <button id="new-quote" onClick={getNewQuote} className="btn btn-primary mL-3 col-3">New Quote</button>
+                                 <a id="tweet-quote" href={"https://twitter.com/intent/tweet?hashtags=quotes&text=" + encodeURIComponent( 
                                 '"' + randomQuote.text + '" ' + randomQuote.author
                                 )
                             }
-                                  target="_blank" className="btn btn-warning col-sm">
+                                  target="_blank" className="btn btn-warning col-3">
                                     <i className= "fa fa-twitter"></i>
                                 </a>
                                
@@ -76,7 +76,7 @@ function App (){
                                     encodeURIComponent(randomQuote.text) +
                                     "&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button"
                                 } 
-                                target="_blank" className="btn btn-danger col-sm">
+                                target="_blank" className="btn btn-danger col-3">
                                     <i className="fa fa-tumblr"></i>
                                 </a>
                             </div>
